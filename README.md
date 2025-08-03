@@ -69,17 +69,4 @@
             gemResult.textContent = randomGem;
         });
         
-        identifyBtn.addEventListener('click', () => {
-            resultDiv.style.display = 'block';
-            identifyBtn.textContent = 'Identifying...';
-            identifyBtn.disabled = true;
-            
-            // Simulate processing time
-            setTimeout(() => {
-                identifyBtn.textContent = 'Identify Gemstone';
-                identifyBtn.disabled = false;
-            }, 2000);
-        });
-    </script>
-</body>
-</html>
+        identifyBtn.addEventListener('click', () => 
