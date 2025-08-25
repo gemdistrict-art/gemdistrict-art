@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Gemdistrict Art - Objevte unikátní drahé kameny a umění. Prozkoumejte naši galerii v Praze a investujte do ověřené hodnoty.">
+    <title>Gemdistrict Art | Galerie drahých kamenů a umění v Praze</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* VÁŠ CSS KÓD ZŮSTÁVÁ BEZE ZMĚNY - JE DLOUHÝ, TAKŽE JE ZDE VYNECHÁN */
+        /* Vložte sem váš kompletní CSS kód z předchozí verze */
+        :root {
+            --primary: #008080; /* atd. */
+        }
+        /* ... VŠECHEN VÁŠ CSS AŽ DO KONCE ... */
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <img src="VASE_LOGO.png" alt="Gemdistrict Art Logo" class="logo-img">
+                <span class="logo-text">Gemdistrict.art</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#gallery" class="nav-link" data-lang="navCollection">Kolekce</a></li>
+                    <li><a href="#story" class="nav-link" data-lang="navStory">Náš Příběh</a></li>
+                    <li><a href="#features" class="nav-link" data-lang="navServices">Naše Služby</a></li>
+                    <li><a href="#nft" class="nav-link" data-lang="navNFT">NFT Certifikáty</a></li>
+                    <li><a href="#contact" class="nav-link" data-lang="navContact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <!-- ZMĚNA: Přepínač jazyka -->
+                <button class="language-toggle" id="languageToggle">
+                    <i class="fas fa-globe"></i>
+                    <span>CS</span>
+                </button>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation (zde také doplněny data-lang atributy) -->
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 data-lang="heroTitle">Umění zrozené v srdci Země</h1>
+        <p data-lang="heroSubtitle">Vítejte v Gemdistrict.art... Objevte ten váš.</p>
+        <a href="#gallery" class="cta-button" data-lang="heroBtnExplore">Prozkoumat kolekci</a>
+        <a href="#contact" class="cta-button" style="background: transparent; color: white; border: 2px solid white; margin-left: 15px;" data-lang="heroBtnVisit">Navštivte nás v Praze</a>
+    </section>
+
+    <!-- PŘÍBĚH -->
+    <section id="story" style="background-color: #f0f4f4;">
+        <div class="container">
+            <h2 class="section-title" data-lang="storyTitle">Náš Příběh</h2>
+            <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="VASE_FOTKA.jpg" alt="Zakladatelka Gemdistrict.art" style="width: 100%; border-radius: 12px; box-shadow: var(--shadow-lg);">
+                </div>
+                <div style="flex: 2; min-width: 300px;">
+                    <h3 data-lang="storyHeadline">Jmenuji se Tali a toto je můj sen</h3>
+                    <p data-lang="storyParagraph1">Více než 20 let se věnuji malbě...</p>
+                    <p data-lang="storyParagraph2">Naše galerie v srdci Prahy...</p>
+                    <a href="#contact" class="cta-button" data-lang="storyBtnAppointment">Domluvit si schůzku</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ... a tak dále pro všechny ostatní textové prvky na stránce ... -->
+    <!-- Například v patičce: -->
+    <footer id="contact">
+        <div class="container">
+            <h3 data-lang="footerContactTitle">Kontakt</h3>
+            <a href="#" data-lang="footerAppointmentLink">Domluvit si schůzku</a>
+            <!-- atd. -->
+        </div>
+    </footer>
+    
+    <script>
+    // ZMĚNA: Kompletní nový skript pro vícejazyčnost
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // 1. SLOVNÍK S PŘEKLADY
+        // Zde je veškerý text stránky. Pro přidání nového textu stačí přidat řádek sem a data-lang atribut do HTML.
+        const translations = {
+            cs: {
+                navCollection: "Kolekce",
+                navStory: "Náš Příběh",
+                navServices: "Naše Služby",
+                navNFT: "NFT Certifikáty",
+                navContact: "Kontakt",
+                heroTitle: "Umění zrozené v srdci Země",
+                heroSubtitle: "Vítejte v Gemdistrict.art, kde se přírodní krása ručně těžených drahokamů setkává s uměním a technologií. Každý kámen má svůj příběh. Objevte ten váš.",
+                heroBtnExplore: "Prozkoumat kolekci",
+                heroBtnVisit: "Navštivte nás v Praze",
+                storyTitle: "Náš Příběh",
+                storyHeadline: "Jmenuji se Tali a toto je můj sen",
+                storyParagraph1: "Více než 20 let se věnuji malbě a hledání krásy v přírodních formách. Gemdistrict.art vznikl z mé vášně pro drahé kameny – ne jako pro pouhé nerosty, ale jako pro umělecká díla, která vytvořila sama příroda.",
+                storyParagraph2: "Naše galerie v srdci Prahy není jen obchod. Je to místo, kde se můžete setkat s historií, energií a jedinečností každého kamene. Věřím, že vlastnit takový klenot je jako vlastnit kousek duše naší planety.",
+                storyBtnAppointment: "Domluvit si schůzku",
+                // ... doplňte překlady pro VŠECHNY data-lang atributy
+            },
+            en: {
+                navCollection: "Collection",
+                navStory: "Our Story",
+                navServices: "Our Services",
+                navNFT: "NFT Certificates",
+                navContact: "Contact",
+                heroTitle: "Art Born in the Heart of the Earth",
+                heroSubtitle: "Welcome to Gemdistrict.art, where the natural beauty of hand-mined gemstones meets art and technology. Every stone has a story. Discover yours.",
+                heroBtnExplore: "Explore the Collection",
+                heroBtnVisit: "Visit us in Prague",
+                storyTitle: "Our Story",
+                storyHeadline: "My name is Tali and this is my dream",
+                storyParagraph1: "For over 20 years, I have dedicated myself to painting and finding beauty in natural forms. Gemdistrict.art was born from my passion for gemstones – not as mere minerals, but as works of art created by nature itself.",
+                storyParagraph2: "Our gallery in the heart of Prague is not just a shop. It is a place where you can encounter the history, energy, and uniqueness of each stone. I believe that owning such a gem is like owning a piece of our planet's soul.",
+                storyBtnAppointment: "Schedule an Appointment",
+                // ... add translations for ALL data-lang attributes
+            }
+        };
+
+        const languageToggle = document.getElementById('languageToggle');
+        const languageToggleSpan = languageToggle.querySelector('span');
+
+        // 2. FUNKCE PRO NASTAVENÍ JAZYKA
+        const setLanguage = (lang) => {
+            document.documentElement.lang = lang; // Nastaví atribut lang v <html>
+            languageToggleSpan.textContent = lang.toUpperCase();
+            
+            // Projde všechny elementy s atributem data-lang
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const key = element.getAttribute('data-lang');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        };
+
+        // 3. PŘEPÍNAČ JAZYKA
+        languageToggle.addEventListener('click', () => {
+            const currentLang = document.documentElement.lang;
+            const newLang = currentLang === 'cs' ? 'en' : 'cs';
+            setLanguage(newLang);
+            localStorage.setItem('gemdistrict-lang', newLang); // Uloží volbu uživatele
+        });
+
+        // 4. AUTOMATICKÁ DETEKCE JAZYKA PŘI PRVNÍ NÁVŠTĚVĚ
+        const savedLang = localStorage.getItem('gemdistrict-lang');
+        if (savedLang) {
+            setLanguage(savedLang);
+        } else {
+            // Zjistí jazyk prohlížeče (např. 'cs-CZ', 'en-US')
+            const browserLang = navigator.language.split('-')[0]; 
+            const defaultLang = browserLang === 'cs' ? 'cs' : 'en';
+            setLanguage(defaultLang);
+        }
+        
+        // --- ZDE POKRAČUJE VÁŠ PŮVODNÍ KÓD PRO MOBILNÍ MENU, DARK MODE ATD. ---
+        // Např.:
+        const menuToggle = document.getElementById('menuToggle');
+        // atd...
+    });
+    </script>
+</body>
+</html>
